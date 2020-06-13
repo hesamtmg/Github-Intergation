@@ -1,1 +1,1 @@
-# Github-Intergation (MVVM - GraphQL - SwiftUI)
+# Github-Intergration (MVVM - GraphQL - SwiftUI)
