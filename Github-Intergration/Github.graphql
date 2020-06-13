@@ -1,0 +1,33 @@
+query SearchTop10Users($user:String!,$count:Int!) {
+  search(query: $user, type: USER, first: $count) {
+    nodes {
+      __typename
+      ... on User {
+        name
+        login
+        avatarUrl
+        url
+        bio
+        id
+        
+        repositories {
+          totalCount
+          
+          
+        }
+      }
+    }
+  }
+}
+query SearchRepos($user:String!,$count:Int!){
+  user(login: $user) {
+    repositories(first: $count, isFork: false) {
+      nodes {
+        name
+        id
+        url
+      }
+    }
+  }
+}
+

@@ -1,0 +1,6 @@
+framework module Pods_Github_Intergration {
+  umbrella header "Pods-Github-Intergration-umbrella.h"
+
+  export *
+  module * { export * }
+}
